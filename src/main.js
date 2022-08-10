@@ -1,4 +1,10 @@
-import add from "./chunk0.js";
 import commonJs from "./common";
 console.log(commonJs());
-console.log(add(1, 2));
+
+import("./chunk0").then((add) => {
+  console.log(add(1, 2));
+});
+
+import("./chunk1").then((flow) => {
+  console.log(flow());
+});

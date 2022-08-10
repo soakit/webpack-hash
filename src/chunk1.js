@@ -1,4 +1,4 @@
-import "chunk1.css";
+import "./chunk1.css";
 import commonJs from "./common";
 console.log(commonJs());
 
